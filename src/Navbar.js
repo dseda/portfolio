@@ -9,14 +9,14 @@ class Navbar extends Component {
             <i class="fas fa-bars"></i>
             <i class="fas fa-bars"></i> */}
           <a href="#">
-            <li>Projects</li>
+            <li>Home</li>
           </a>
           <a href="#">
-            <li>About</li>
+            <li>Projects</li>
           </a>
 
           <a href="#">
-            <li>Contact</li>
+            <li>About</li>
           </a>
         </ul>
       </nav>

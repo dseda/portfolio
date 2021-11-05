@@ -1,8 +1,7 @@
 nav {
-  width: 30%;
-  padding: 0.8rem 1rem;
-  margin: 1rem 2rem;
-  flex-basis: 25%;
+  flex-basis: 35%;
+  padding: 0.5rem 1rem;
+  margin: 0 2rem;
 }
 ul.Navigation {
   display: flex;
@@ -12,13 +11,17 @@ ul.Navigation {
 }
 nav ul a {
   list-style: none;
-  flex-basis: 30%;
-  height: 3vh;
+  flex-basis: 33%;
   text-decoration: none;
-  color: black;
   letter-spacing: 0.1rem;
 }
 
 nav ul a li {
   font-size: 1.2rem;
+  padding: 0.1rem 0.5rem;
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 660px) {
 }
