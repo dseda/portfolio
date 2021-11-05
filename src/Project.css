@@ -3,6 +3,8 @@
   background-color: pink;
   border-radius: 5px;
   padding-bottom: 2rem;
+  justify-self: center;
+  width: 80%;
 }
 .Project-Image {
   width: 50%;
@@ -10,4 +12,10 @@
 img {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .Project {
+    width: 90%;
+  }
 }

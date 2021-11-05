@@ -3,14 +3,18 @@ import authorPhoto from "./coding.jpeg";
 import "./Project.css";
 class Project extends Component {
   render() {
+    const techs = this.props.techs.join(", ");
     return (
-      <div className="Project">
+      <div key={this.props.id} className="Project">
         <div className="Project-image">
-          <img src={authorPhoto} />
+          <img src={authorPhoto} /*src={imgSrc}*/ />
         </div>
-        <h3>Project title</h3>
-        <p>Project details</p>
-        <footer>Techs used</footer>
+        <h3>{this.props.title}</h3>
+        <p>
+          Project details
+          {/* {this.props.details} */}
+        </p>
+        <footer>{techs}</footer>
       </div>
     );
   }
