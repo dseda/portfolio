@@ -1,0 +1,13 @@
+.Project {
+  /* border: 1px solid purple; */
+  background-color: pink;
+  border-radius: 5px;
+  padding-bottom: 2rem;
+}
+.Project-Image {
+  width: 50%;
+}
+img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}

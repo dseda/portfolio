@@ -1,0 +1,11 @@
+.Projects {
+  margin: 2rem;
+  padding: 5rem 2rem;
+}
+.ProjectList {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 70px;
+}

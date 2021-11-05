@@ -11,7 +11,7 @@ class Navbar extends Component {
           <a href="#">
             <li>Home</li>
           </a>
-          <a href="#">
+          <a href="#projects">
             <li>Projects</li>
           </a>
 

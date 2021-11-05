@@ -7,7 +7,7 @@ class Header extends Component {
       <header>
         <div className="Logo">
           <div>
-            <i className="fab fa-stripe-s 5x"></i>
+            <i className="fab fa-stripe-s"></i>
           </div>
           <span>eda.</span>
         </div>
