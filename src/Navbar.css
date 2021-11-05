@@ -1,0 +1,19 @@
+nav {
+  width: 30%;
+  padding: 0.8rem 1rem;
+  margin: 1rem 2rem;
+}
+ul.Navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+nav ul a {
+  list-style: none;
+  flex-basis: 30%;
+  height: 3vh;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.1rem;
+}
