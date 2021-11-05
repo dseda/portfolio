@@ -23,5 +23,11 @@ nav ul a li {
   font-weight: 500;
 }
 
+nav ul a li:hover {
+  font-size: 1.45rem;
+  box-shadow: 0 0 2px wheat;
+  box-shadow: 0 2px 2px -1px white;
+}
+
 @media screen and (max-width: 660px) {
 }

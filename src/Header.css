@@ -18,9 +18,27 @@ header {
   width: 2rem;
   font-size: 2rem;
 }
-
+.rotating {
+  /* transform: rotate(90deg); */
+  animation-name: rotate;
+  animation-duration: 0.4s;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(45deg);
+  }
+  30% {
+    transform: rotate(90deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 .Logo span {
   letter-spacing: 0.1rem;
-  margin-left: 0.2rem;
+  margin-left: 0.4rem;
   font-size: 2.2rem;
 }
