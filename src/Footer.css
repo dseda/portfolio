@@ -1,0 +1,41 @@
+.Footer {
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Footer p {
+  text-align: left;
+  padding: 2rem;
+  font-size: 1.3rem;
+  /* border: 1px solid yellow; */
+}
+.Socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+
+  /* border: 1px solid yellow; */
+}
+.Socials i {
+  padding: 1rem;
+  font-size: 3rem;
+  /* border: 1px solid yellow; */
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 668px) {
+  .Footer {
+    flex-direction: column;
+  }
+  .Socials {
+    margin: 1rem auto 2rem;
+    align-content: center;
+  }
+}

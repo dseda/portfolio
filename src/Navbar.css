@@ -2,6 +2,8 @@ nav {
   flex-basis: 35%;
   padding: 0.5rem 1rem;
   margin: 0 2rem;
+  /* position: sticky;
+  top: 0; */
 }
 ul.Navigation {
   display: flex;
@@ -9,8 +11,11 @@ ul.Navigation {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-nav ul a {
+a {
   list-style: none;
+}
+nav ul a {
+  /* list-style: none; */
   flex-basis: 33%;
   text-decoration: none;
   letter-spacing: 0.1rem;
@@ -24,9 +29,7 @@ nav ul a li {
 }
 
 nav ul a li:hover {
-  font-size: 1.45rem;
-  box-shadow: 0 0 2px wheat;
-  box-shadow: 0 2px 2px -1px white;
+  box-shadow: 0 2px 0px -1px white;
 }
 
 @media screen and (max-width: 660px) {
