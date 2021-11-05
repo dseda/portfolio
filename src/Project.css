@@ -1,21 +1,46 @@
 .Project {
-  /* border: 1px solid purple; */
   background-color: pink;
   border-radius: 5px;
   padding-bottom: 2rem;
   justify-self: center;
   width: 80%;
+  box-shadow: -1px -1px 6px grey;
+}
+.Project:hover {
+  width: 80.5%;
+
+  box-shadow: -3px -3px 6px grey;
+}
+.Project:active {
+  box-shadow: -4px -4px 6px 3px grey;
 }
 .Project-Image {
   width: 50%;
+  height: 300px;
 }
 img {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
 
+.Project footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Project footer p {
+  padding-right: 0.5rem;
+}
+.Project footer p i {
+  padding-right: 0.5rem;
+  font-size: 1.7rem;
+}
 @media screen and (max-width: 800px) {
   .Project {
     width: 90%;
+  }
+  .Project:hover {
+    width: 90.5%;
   }
 }

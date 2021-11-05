@@ -1,8 +1,9 @@
 .Projects {
-  margin: 2rem auto;
-  padding: 5rem 2rem;
+  margin: 1rem auto;
+  padding: 4rem 2rem;
 }
 .Projects h2 {
+  margin-bottom: 4rem;
   font-size: 2.5rem;
 }
 .Projects h3 {

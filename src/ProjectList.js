@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import Project from "./Project";
 import "./ProjectList.css";
+import addressbook from "./address-book.png";
+import todoapp from "./todoapp.png";
+import coinnflipper from "./coinflipper.png";
 class ProjectList extends Component {
   constructor(props) {
     super(props);
@@ -8,24 +11,24 @@ class ProjectList extends Component {
       projects: [
         {
           id: 1,
-          imgSrc: "",
+          imgSrc: addressbook,
           title: "Contacts App",
           details: "",
-          techsUsed: ["JS", "React.js", "CSS", "HTML"],
+          techsUsed: ["js", "react", "css", "html"],
         },
         {
           id: 2,
-          imgSrc: "",
-          title: "Roll Dice",
+          imgSrc: todoapp,
+          title: "Todo App",
           details: "",
-          techsUsed: ["JS", "React.js", "CSS", "HTML"],
+          techsUsed: ["js", "react", "css", "html"],
         },
         {
           id: 3,
-          imgSrc: "",
+          imgSrc: coinnflipper,
           title: "Coin Flipper",
           details: "",
-          techsUsed: ["JS", "React.js", "CSS", "HTML"],
+          techsUsed: ["js", "react", "css", "html"],
         },
       ],
     };
