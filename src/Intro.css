@@ -1,0 +1,42 @@
+.Intro {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  justify-items: center;
+}
+
+.Intro-info {
+  flex-basis: 35%;
+  background-color: darkslategrey;
+  padding: 4rem 2rem;
+  text-align: left;
+  margin: 1rem;
+}
+.Intro-info p {
+  letter-spacing: 0.1rem;
+  color: white;
+  font-size: 1.6rem;
+}
+.Intro-photo {
+  flex-basis: 40%;
+  margin: 2rem 1rem;
+}
+.Intro-photo img {
+  max-width: 100%;
+  width: 90%;
+}
+
+@media screen and (max-width: 660px) {
+  .Intro {
+    height: 100%;
+    flex-direction: column;
+  }
+  .Intro-photo img {
+    max-width: 100%;
+    width: 70%;
+  }
+}
