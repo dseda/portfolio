@@ -3,7 +3,6 @@ import "./Project.css";
 import jquery from "./jquery.png";
 class Project extends Component {
   render() {
-    console.log(jquery);
     const techs = this.props.techs.map((t) => {
       if (t === "js") {
         return <i className="fab fa-js-square"></i>;
@@ -14,7 +13,11 @@ class Project extends Component {
       } else if (t === "html") {
         return <i className="fab fa-html5"></i>;
       } else if (t === "jquery") {
-        return <img className="tech" src={jquery}></img>;
+        return (
+          <div className="Tech-stack-img">
+            <img className="tech" src={jquery} alt={t}></img>
+          </div>
+        );
       }
     });
     console.log(this.props.techs);
