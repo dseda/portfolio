@@ -1,6 +1,6 @@
 .Footer {
   width: 100%;
-  background-color: black;
+  background-color: #0c2233;
   color: whitesmoke;
   display: flex;
   flex-direction: row;
@@ -35,7 +35,7 @@
     flex-direction: column;
   }
   .Socials {
-    margin: 1rem auto 2rem;
+    margin: 0 auto 2rem;
     align-content: center;
   }
 }

@@ -4,6 +4,7 @@
   padding-bottom: 2rem;
   justify-self: center;
   width: 80%;
+  /* height: 600px; */
   box-shadow: -1px -1px 6px grey;
 }
 .Project:hover {
@@ -16,11 +17,14 @@
 }
 .Project-Image {
   width: 50%;
-  height: 300px;
 }
 img {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+}
+
+img.tech {
+  width: 1.4rem;
 }
 
 .Project footer {

@@ -6,28 +6,34 @@ class Header extends Component {
     super(props);
     this.state = {
       rotating: false,
+      menuOpen: false,
     };
     this.toggleRotate = this.toggleRotate.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
   toggleRotate(e) {
     this.setState((st) => {
       return { rotating: !st.rotating };
     });
-    console.log("start");
   }
-
-  rotateEnd() {}
+  toggleMenu() {
+    this.setState((st) => {
+      return { menuOpen: !st.menuOpen };
+    });
+  }
   render() {
     const rotating = this.state.rotating;
     return (
       <header onMouseEnter={this.toggleRotate} onMouseLeave={this.toggleRotate}>
-        <div className="Logo">
-          <div>
+        <a className="Logo-link">
+          <div className="Logo">
             <i className={`fab fa-stripe-s ${rotating ? "rotating" : ""}`}></i>
+            <span>eda.</span>
+            {/* <span>.</span> */}
           </div>
-          <span>eda.</span>
-        </div>
-        <Navbar />
+        </a>
+
+        <Navbar menuOpen={this.state.menuOpen} />
       </header>
     );
   }

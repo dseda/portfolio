@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Project from "./Project";
 import "./ProjectList.css";
-import addressbook from "./address-book.png";
+import contactsapp from "./address-book.png";
 import todoapp from "./todoapp.png";
-import coinnflipper from "./coinflipper.png";
+import coinflipper from "./coinflipper.png";
+
 class ProjectList extends Component {
   constructor(props) {
     super(props);
@@ -11,10 +12,10 @@ class ProjectList extends Component {
       projects: [
         {
           id: 1,
-          imgSrc: addressbook,
+          imgSrc: contactsapp,
           title: "Contacts App",
           details: "",
-          techsUsed: ["js", "react", "css", "html"],
+          techsUsed: ["js", "css", "html", "jquery"],
         },
         {
           id: 2,
@@ -25,7 +26,7 @@ class ProjectList extends Component {
         },
         {
           id: 3,
-          imgSrc: coinnflipper,
+          imgSrc: coinflipper,
           title: "Coin Flipper",
           details: "",
           techsUsed: ["js", "react", "css", "html"],
@@ -44,10 +45,10 @@ class ProjectList extends Component {
       />
     ));
     return (
-      <div id="projects" className="Projects">
+      <section id="projects" className="Projects">
         <h2>My Projects</h2>
         <div className="ProjectList">{projects}</div>
-      </div>
+      </section>
     );
   }
 }

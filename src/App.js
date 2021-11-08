@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import Intro from "./Intro";
 import ProjectList from "./ProjectList";
+import About from "./About";
 import Footer from "./Footer";
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Intro />
       <ProjectList />
+      <About />
       <Footer />
     </div>
   );
