@@ -4,7 +4,7 @@ import jquery from "./jquery.png";
 class Project extends Component {
   render() {
     console.log(jquery);
-    const techsX = this.props.techs.map((t) => {
+    const techs = this.props.techs.map((t) => {
       if (t === "js") {
         return <i className="fab fa-js-square"></i>;
       } else if (t === "react") {
@@ -18,23 +18,30 @@ class Project extends Component {
       }
     });
     console.log(this.props.techs);
+    const { id, imgSrc, title, details, src } = this.props;
     return (
-      <div key={this.props.id} className="Project">
+      <section key={id} className="Project">
         <div className="Project-image">
-          <img src={this.props.imgSrc} />
+          <img src={imgSrc} />
         </div>
         <div className="Project-details">
-          <h3>{this.props.title}</h3>
+          <h3>{title}</h3>
+          <div className="Tech-stack">
+            <p>Tech Stack: </p>
+            <p>{techs}</p>
+          </div>
           <p>
             Project details
-            {/* {this.props.details} */}
+            {/* {details} */}
           </p>
+
           <footer>
-            <p>Tech Stack: </p>
-            <p>{techsX}</p>
+            <a href={src} className="Project-demo-link" target="_blank">
+              <p>View live demo</p>
+            </a>
           </footer>
         </div>
-      </div>
+      </section>
     );
   }
 }

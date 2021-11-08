@@ -1,27 +1,23 @@
 import React, { Component } from "react";
 import "./Navbar.css";
 class Navbar extends Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-  handleClick(e) {
-    // this.toggleMenu();
-  }
   render() {
-    return (
-      <nav>
-        {/* {!this.props.menuOpen ? (
-          <button className="Hamburger" onClick={this.handleClick}>
+    if (!this.props.menuOpen) {
+      return (
+        <nav className="Nav-ham">
+          <button className="Hamburger" onClick={this.props.toggleMenu}>
             <i className="fas fa-bars"></i>
           </button>
-        ) : (
-          <button className="Hamburger" onClick={this.handleClick}>
+        </nav>
+      );
+    } else {
+      return (
+        <nav className="Nav-cross">
+          <button className="Hamburger" onClick={this.props.toggleMenu}>
             <i class="fas fa-times"></i>
           </button>
-        )} */}
-        <div>
-          <ul className="Navigation">
+
+          <ul className="Site-nav">
             <a href="#">
               <li>Home</li>
             </a>
@@ -33,9 +29,9 @@ class Navbar extends Component {
               <li>About</li>
             </a>
           </ul>
-        </div>
-      </nav>
-    );
+        </nav>
+      );
+    }
   }
 }
 

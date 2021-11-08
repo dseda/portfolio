@@ -1,15 +1,12 @@
 .Project {
   background-color: pink;
   border-radius: 5px;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   justify-self: center;
   width: 80%;
-  /* height: 600px; */
   box-shadow: -1px -1px 6px grey;
 }
 .Project:hover {
-  width: 80.5%;
-
   box-shadow: -3px -3px 6px grey;
 }
 .Project:active {
@@ -27,19 +24,46 @@ img.tech {
   width: 1.4rem;
 }
 
-.Project footer {
+.Project-details {
+  padding: 1rem 2rem;
+}
+.Project .Tech-stack {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.Project footer p {
+.Project .Tech-stack p {
   padding-right: 0.5rem;
 }
-.Project footer p i {
+.Project .Tech-stack p i {
   padding-right: 0.5rem;
   font-size: 1.7rem;
 }
+.Project footer {
+  bottom: 0;
+}
+.Project-demo-link p:active {
+  box-shadow: 1px 1px 2px 1px grey;
+}
+.Project-demo-link p {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.8rem;
+  border-radius: 30px;
+  color: white;
+  border: 1px solid black;
+  background-color: grey;
+}
+
+.Project-demo-link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: initial;
+}
+
 @media screen and (max-width: 800px) {
   .Project {
     width: 90%;

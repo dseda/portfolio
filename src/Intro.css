@@ -29,7 +29,7 @@
   width: 90%;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 640px) {
   .Intro {
     height: 100%;
     flex-direction: column;

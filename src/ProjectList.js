@@ -16,6 +16,7 @@ class ProjectList extends Component {
           title: "Contacts App",
           details: "",
           techsUsed: ["js", "css", "html", "jquery"],
+          src: "https://dseda.github.io/address-book/",
         },
         {
           id: 2,
@@ -23,6 +24,7 @@ class ProjectList extends Component {
           title: "Todo App",
           details: "",
           techsUsed: ["js", "react", "css", "html"],
+          src: "https://dseda.github.io/react-todo-app/",
         },
         {
           id: 3,
@@ -30,6 +32,7 @@ class ProjectList extends Component {
           title: "Coin Flipper",
           details: "",
           techsUsed: ["js", "react", "css", "html"],
+          src: "https://dseda.github.io/coin-flipper/",
         },
       ],
     };
@@ -42,6 +45,7 @@ class ProjectList extends Component {
         title={p.title}
         imgSrc={p.imgSrc}
         techs={p.techsUsed}
+        src={p.src}
       />
     ));
     return (
