@@ -28,8 +28,8 @@ class Header extends Component {
         <a className="Logo-link">
           <div className="Logo">
             <i className={`fab fa-stripe-s ${rotating ? "rotating" : ""}`}></i>
-            <span>eda.</span>
-            {/* <span>.</span> */}
+
+            <span>eda</span>
           </div>
         </a>
 

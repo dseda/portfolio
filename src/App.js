@@ -14,6 +14,7 @@ class App extends Component {
         <Header />
         <Routes>
           <Route exact path="/" element={<Intro />} />
+          <Route exact path="/portfolio" element={<Intro />} />
           <Route exact path="/projects" element={<ProjectList />} />
           <Route exact path="/about" element={<About />} />
         </Routes>

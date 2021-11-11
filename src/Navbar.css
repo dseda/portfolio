@@ -10,7 +10,7 @@ nav {
 ul.Site-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-decoration: none;
 }
 
@@ -20,13 +20,13 @@ nav ul li {
   letter-spacing: 0.1rem;
   list-style: none;
   font-size: 1.4rem;
-  padding: 0.1rem 0.5rem;
-  color: whitesmoke;
-  font-weight: 500;
+  padding: 0.1rem 1rem;
+  color: rgb(193, 191, 191);
+  font-weight: 700;
 }
 
 nav ul li:hover {
-  box-shadow: 0 2px 0px -1px white;
+  color: white;
 }
 nav .Hamburger {
   background-color: transparent;

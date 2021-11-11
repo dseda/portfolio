@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
+import { Link, useMatch, useResolvedPath, LinkProps } from "react-router-dom";
+
 import "./Navbar.css";
+
 class Navbar extends Component {
   render() {
     if (!this.props.menuOpen) {
@@ -20,30 +22,14 @@ class Navbar extends Component {
 
           <ul className="Site-nav">
             <li>
-              <Link
-                to="/"
-                style={{ padding: 5, color: "white", textDecoration: "none" }}
-              >
-                Home
-              </Link>
+              <CustomLink to="/">Home</CustomLink>
             </li>
 
             <li>
-              {" "}
-              <Link
-                to="/projects"
-                style={{ padding: 5, color: "white", textDecoration: "none" }}
-              >
-                Projects
-              </Link>
+              <CustomLink to="/projects">Projects</CustomLink>
             </li>
             <li>
-              <Link
-                to="/about"
-                style={{ padding: 5, color: "white", textDecoration: "none" }}
-              >
-                About
-              </Link>
+              <CustomLink to="/about">About</CustomLink>
             </li>
           </ul>
         </nav>
@@ -51,5 +37,24 @@ class Navbar extends Component {
     }
   }
 }
+function CustomLink({ children, to, ...props }: LinkProps) {
+  let resolved = useResolvedPath(to);
+  let match = useMatch({ path: resolved.pathname, end: true });
 
+  return (
+    <div>
+      <Link
+        style={{
+          textDecoration: match ? "underline" : "none",
+          color: match ? "white" : "inherit",
+        }}
+        to={to}
+        {...props}
+      >
+        {children}
+      </Link>
+      {match && ""}
+    </div>
+  );
+}
 export default Navbar;
