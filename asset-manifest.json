@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f24295c3.chunk.css",
-    "main.js": "/portfolio/static/js/main.b987dcf9.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.b987dcf9.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.798ed161.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.798ed161.js.map",
-    "static/js/2.6aae76da.chunk.js": "/portfolio/static/js/2.6aae76da.chunk.js",
-    "static/js/2.6aae76da.chunk.js.map": "/portfolio/static/js/2.6aae76da.chunk.js.map",
-    "static/js/3.ecfabc3c.chunk.js": "/portfolio/static/js/3.ecfabc3c.chunk.js",
-    "static/js/3.ecfabc3c.chunk.js.map": "/portfolio/static/js/3.ecfabc3c.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.c81b2365.chunk.css",
+    "main.js": "/portfolio/static/js/main.9a5ec099.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9a5ec099.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.7d260fa5.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.7d260fa5.js.map",
+    "static/js/2.84d8d9b6.chunk.js": "/portfolio/static/js/2.84d8d9b6.chunk.js",
+    "static/js/2.84d8d9b6.chunk.js.map": "/portfolio/static/js/2.84d8d9b6.chunk.js.map",
+    "static/js/3.0fa999f2.chunk.js": "/portfolio/static/js/3.0fa999f2.chunk.js",
+    "static/js/3.0fa999f2.chunk.js.map": "/portfolio/static/js/3.0fa999f2.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.f24295c3.chunk.css.map": "/portfolio/static/css/main.f24295c3.chunk.css.map",
-    "static/js/2.6aae76da.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6aae76da.chunk.js.LICENSE.txt",
+    "static/css/main.c81b2365.chunk.css.map": "/portfolio/static/css/main.c81b2365.chunk.css.map",
+    "static/js/2.84d8d9b6.chunk.js.LICENSE.txt": "/portfolio/static/js/2.84d8d9b6.chunk.js.LICENSE.txt",
     "static/media/address-book.a092a34e.png": "/portfolio/static/media/address-book.a092a34e.png",
     "static/media/coding.066b074d.jpeg": "/portfolio/static/media/coding.066b074d.jpeg",
     "static/media/coinflipper.21ac91ff.png": "/portfolio/static/media/coinflipper.21ac91ff.png",
@@ -19,9 +19,9 @@
     "static/media/todoapp.95b167f3.png": "/portfolio/static/media/todoapp.95b167f3.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.798ed161.js",
-    "static/js/2.6aae76da.chunk.js",
-    "static/css/main.f24295c3.chunk.css",
-    "static/js/main.b987dcf9.chunk.js"
+    "static/js/runtime-main.7d260fa5.js",
+    "static/js/2.84d8d9b6.chunk.js",
+    "static/css/main.c81b2365.chunk.css",
+    "static/js/main.9a5ec099.chunk.js"
   ]
 }
