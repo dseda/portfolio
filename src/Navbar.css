@@ -11,24 +11,21 @@ ul.Site-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  text-decoration: none;
 }
-a {
-  list-style: none;
-}
-nav ul a {
+
+nav ul li {
   flex-basis: 33%;
   text-decoration: none;
   letter-spacing: 0.1rem;
-}
-
-nav ul a li {
+  list-style: none;
   font-size: 1.4rem;
   padding: 0.1rem 0.5rem;
   color: whitesmoke;
   font-weight: 500;
 }
 
-nav ul a li:hover {
+nav ul li:hover {
   box-shadow: 0 2px 0px -1px white;
 }
 nav .Hamburger {
@@ -49,7 +46,7 @@ nav .Hamburger i {
     /* position: sticky;
     top: 0; */
   }
-  nav ul a li {
+  nav ul li {
     font-size: 1rem;
     padding: 0.1rem 0.5rem;
     font-weight: 400;

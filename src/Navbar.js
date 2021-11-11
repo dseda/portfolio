@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import "./Navbar.css";
 class Navbar extends Component {
   render() {
@@ -18,16 +19,32 @@ class Navbar extends Component {
           </button>
 
           <ul className="Site-nav">
-            <a href="#">
-              <li>Home</li>
-            </a>
-            <a href="#projects">
-              <li>Projects</li>
-            </a>
+            <li>
+              <Link
+                to="/"
+                style={{ padding: 5, color: "white", textDecoration: "none" }}
+              >
+                Home
+              </Link>
+            </li>
 
-            <a href="#">
-              <li>About</li>
-            </a>
+            <li>
+              {" "}
+              <Link
+                to="/projects"
+                style={{ padding: 5, color: "white", textDecoration: "none" }}
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                style={{ padding: 5, color: "white", textDecoration: "none" }}
+              >
+                About
+              </Link>
+            </li>
           </ul>
         </nav>
       );

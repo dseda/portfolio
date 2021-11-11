@@ -49,7 +49,7 @@ class ProjectList extends Component {
       />
     ));
     return (
-      <section id="projects" className="Projects">
+      <section className="Projects">
         <h2>My Projects</h2>
         <div className="ProjectList">{projects}</div>
       </section>

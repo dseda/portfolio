@@ -1,4 +1,6 @@
 .Footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   background-color: #0c2233;
   color: whitesmoke;
@@ -35,7 +37,7 @@
     flex-direction: column;
   }
   .Socials {
-    margin: 0 auto 2rem;
+    margin: 0 auto 1rem;
     align-content: center;
   }
 }

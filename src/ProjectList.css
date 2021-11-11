@@ -1,7 +1,6 @@
 .Projects {
   width: 90%;
-  margin: 1rem auto;
-  padding: 1rem 1rem;
+  margin: 4rem auto;
 }
 .Projects h2 {
   margin-bottom: 3rem;
@@ -11,7 +10,7 @@
   font-size: 1.8rem;
 }
 .ProjectList {
-  margin-top: 3rem;
+  margin: 2rem auto 15rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #fbfbf3;
