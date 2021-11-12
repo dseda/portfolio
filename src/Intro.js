@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Intro.css";
-import authorPhoto from "./coding.jpeg";
+import authorPhoto from "./images/coding.jpeg";
 class Intro extends Component {
   render() {
     return (

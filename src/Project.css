@@ -1,26 +1,27 @@
 .Project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
   background-color: #0e273a;
   border-radius: 5px;
-  padding-bottom: 1rem;
   justify-self: center;
   width: 80%;
   color: white;
   font-size: 1.1rem;
-
   box-shadow: -1px -1px 6px grey;
 }
 .Project:hover {
-  box-shadow: -3px -3px 6px grey;
+  box-shadow: 3px 3px 6px grey;
 }
 .Project:active {
-  box-shadow: -4px -4px 6px 3px grey;
+  box-shadow: 4px 4px 6px 3px grey;
 }
 .Project-Image {
   width: 50%;
 }
 .Tech-stack-img {
   background-color: white;
-  padding-top: 7px;
+  padding-top: 6px;
   padding-left: 3px;
   display: inline;
   border-radius: 5px;
@@ -34,20 +35,27 @@ img.tech {
   width: 1.4rem;
 }
 
-.Project-details {
+.Project-info {
   font-weight: 600;
-  padding: 1rem 2rem;
+  align-self: end;
 }
 .Project .Tech-stack {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  justify-items: center;
+  align-content: center;
   align-items: center;
+  padding-bottom: 1rem;
 }
-.Project .Tech-stack p {
-  padding-right: 0.5rem;
+.Project .Tech-stack ul {
+  padding-inline-start: 10px;
 }
-.Project .Tech-stack p i {
+.Project .Tech-stack ul li {
+  list-style: none;
+  display: inline;
+}
+.Project .Tech-stack ul li i {
   padding-right: 0.5rem;
   font-size: 1.7rem;
   font-weight: 400;
@@ -63,9 +71,9 @@ img.tech {
   margin: 0 auto;
   padding: 1rem;
   border-radius: 30px;
-  color: whitesmoke;
+  color: white;
   font-weight: 600;
-  background: linear-gradient(80deg, #00356b, #0d4d8c, #00356b);
+  background-color: rgb(68, 53, 162);
   /* background-color: #1662ad; */
 }
 
@@ -75,12 +83,17 @@ img.tech {
 a:visited {
   color: initial;
 }
-
+.Project .Project-details {
+  background: linear-gradient(80deg, #00356b, #1071d2, #00356b);
+}
+.Project footer .Project-details p {
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 @media screen and (max-width: 800px) {
   .Project {
-    width: 90%;
-  }
-  .Project:hover {
-    width: 90.5%;
+    width: 95%;
   }
 }

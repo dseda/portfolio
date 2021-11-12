@@ -24,12 +24,16 @@ class Header extends Component {
   render() {
     const rotating = this.state.rotating;
     return (
-      <header onMouseEnter={this.toggleRotate} onMouseLeave={this.toggleRotate}>
+      <header
+        className="Header"
+        onMouseEnter={this.toggleRotate}
+        onMouseLeave={this.toggleRotate}
+      >
         <a className="Logo-link">
           <div className="Logo">
             <i className={`fab fa-stripe-s ${rotating ? "rotating" : ""}`}></i>
 
-            <span>eda</span>
+            <span>eda.dev</span>
           </div>
         </a>
 

@@ -5,36 +5,33 @@ import "./Navbar.css";
 
 class Navbar extends Component {
   render() {
-    if (!this.props.menuOpen) {
-      return (
-        <nav className="Nav-ham">
-          <button className="Hamburger" onClick={this.props.toggleMenu}>
-            <i className="fas fa-bars"></i>
-          </button>
-        </nav>
-      );
-    } else {
-      return (
-        <nav className="Nav-cross">
-          <button className="Hamburger" onClick={this.props.toggleMenu}>
-            <i class="fas fa-times"></i>
-          </button>
+    // <nav className="Nav-ham">
+    //   <button className="Hamburger" onClick={this.props.toggleMenu}>
+    //     <i className="fas fa-bars"></i>
+    //   </button>
+    //   </nav>
+    //   <nav className="Nav-cross">
+    //   <button className="Hamburger" onClick={this.props.toggleMenu}>
+    //     <i class="fas fa-times"></i>
+    //   </button>
+    //   </nav>
 
-          <ul className="Site-nav">
-            <li>
-              <CustomLink to="/">Home</CustomLink>
-            </li>
+    return (
+      <nav>
+        <ul className="Site-nav">
+          <li>
+            <CustomLink to="/">Home</CustomLink>
+          </li>
 
-            <li>
-              <CustomLink to="/projects">Projects</CustomLink>
-            </li>
-            <li>
-              <CustomLink to="/about">About</CustomLink>
-            </li>
-          </ul>
-        </nav>
-      );
-    }
+          <li>
+            <CustomLink to="/projects">Projects</CustomLink>
+          </li>
+          <li>
+            <CustomLink to="/about">About</CustomLink>
+          </li>
+        </ul>
+      </nav>
+    );
   }
 }
 function CustomLink({ children, to, ...props }: LinkProps) {

@@ -1,52 +1,81 @@
 import React, { Component } from "react";
-import Project from "./Project";
+import ProjectsData from "./ProjectsData";
 import "./ProjectList.css";
-import contactsapp from "./address-book.png";
-import todoapp from "./todoapp.png";
-import coinflipper from "./coinflipper.png";
+import "./Project.css";
+import jquery from "./images/jquery.png";
+import { Link, Outlet } from "react-router-dom";
 
 class ProjectList extends Component {
+  static defaultProps = {
+    projects: ProjectsData,
+  };
   constructor(props) {
     super(props);
-    this.state = {
-      projects: [
-        {
-          id: 1,
-          imgSrc: contactsapp,
-          title: "Contacts App",
-          details: "",
-          techsUsed: ["js", "css", "html", "jquery"],
-          src: "https://dseda.github.io/address-book/",
-        },
-        {
-          id: 2,
-          imgSrc: todoapp,
-          title: "Todo App",
-          details: "",
-          techsUsed: ["js", "react", "css", "html"],
-          src: "https://dseda.github.io/react-todo-app/",
-        },
-        {
-          id: 3,
-          imgSrc: coinflipper,
-          title: "Coin Flipper",
-          details: "",
-          techsUsed: ["js", "react", "css", "html"],
-          src: "https://dseda.github.io/coin-flipper/",
-        },
-      ],
-    };
   }
   render() {
-    const projects = this.state.projects.map((p) => (
-      <Project
-        id={p.id}
-        details={p.details}
-        title={p.title}
-        imgSrc={p.imgSrc}
-        techs={p.techsUsed}
-        src={p.src}
-      />
+    const projects = this.props.projects.map((p) => (
+      <section key={p.id} className="Project">
+        <div className="Project-image">
+          <img src={p.imgSrc} />
+        </div>
+        <div className="Project-info">
+          <h3>{p.title}</h3>
+          <div className="Tech-stack">
+            <p>Tech Stack: </p>
+            <ul>
+              {p.techsUsed.map((t) => {
+                if (t === "js")
+                  return (
+                    <li>
+                      <i className="fab fa-js-square"></i>
+                    </li>
+                  );
+                else if (t === "react")
+                  return (
+                    <li>
+                      <i className="fab fa-react"></i>
+                    </li>
+                  );
+                else if (t === "css")
+                  return (
+                    <li>
+                      <i className="fab fa-css3-alt"></i>
+                    </li>
+                  );
+                else if (t === "html")
+                  return (
+                    <li>
+                      <i className="fab fa-html5"></i>
+                    </li>
+                  );
+                else if (t === "jquery") {
+                  return (
+                    <li className="Tech-stack-img">
+                      <img className="tech" src={jquery} alt={t}></img>
+                    </li>
+                  );
+                }
+              })}
+            </ul>
+          </div>
+          {/* <p>{p.details}</p> */}
+          <footer>
+            <a href={p.src} className="Project-demo-link" target="_blank">
+              <p>Live demo</p>
+            </a>
+            <div className="Project-details">
+              <Link
+                key={p.id}
+                to={`/projects/${p.id}`}
+                style={{ textDecoration: "none" }}
+              >
+                <p>View project details</p>
+              </Link>
+            </div>
+            <Outlet />
+          </footer>
+        </div>
+      </section>
     ));
     return (
       <section className="Projects">

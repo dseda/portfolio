@@ -1,28 +1,29 @@
 .Projects {
-  width: 90%;
-  margin: 4rem auto;
+  width: 95%;
+  margin: 0 auto;
 }
 .Projects h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-size: 3rem;
 }
 .Projects h3 {
   font-size: 1.8rem;
 }
 .ProjectList {
-  margin: 2rem auto 15rem;
+  margin: 0 auto 15rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #fbfbf3;
   padding: 6rem;
+  column-gap: 2rem;
   row-gap: 8rem;
-  justify-items: start;
+  justify-items: flex-start;
 }
 @media screen and (max-width: 1200px) {
   .Projects {
     width: 96%;
-    margin: 1rem auto;
-    padding: 3rem 0;
+    margin: 0 auto;
+    padding: 0 0 3rem;
   }
   .ProjectList {
     grid-template-columns: 1fr 1fr;
@@ -33,12 +34,9 @@
   @media screen and (max-width: 640px) {
     .Projects {
       width: 90%;
-      margin: 1rem auto;
-      padding: 4rem 1rem;
     }
     .ProjectList {
       grid-template-columns: 1fr;
-      padding: 2rem;
       row-gap: 6rem;
     }
   }

@@ -1,0 +1,109 @@
+.ProjectDetails {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  column-gap: 2rem;
+  justify-items: start;
+  min-height: 100vh;
+}
+.ProjectDetails header {
+  grid-area: 1 / 1 / 2 / 3;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+}
+.ProjectDetails header h2 {
+  font-size: 2.7rem;
+}
+.ProjectImage {
+  grid-area: 2 / 1 / 3 / 2;
+  max-width: 400px;
+  justify-content: start;
+  align-self: start;
+  border: 3px solid slateblue;
+  box-shadow: 5px 5px slateblue;
+  /* border-radius: 10px; */
+  /* justify-self: stretch; */
+}
+
+.ProjectImage img {
+  border-radius: 10px;
+}
+.ProjectInfo {
+  grid-area: 2 / 2 / 3 / 3;
+  justify-self: start;
+}
+
+.ProjectInfo h3 {
+  font-size: 1.5rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.ProjectInfo p {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.ProjectInfo p:first-of-type {
+  font-weight: 600;
+  color: rgb(83, 70, 170);
+}
+
+.ProjectInfo ul {
+  display: inline;
+  margin: 0;
+  padding-left: 0.3rem;
+}
+.ProjectInfo ul li {
+  list-style: none;
+  display: inline;
+}
+.ProjectInfo ul li::after {
+  content: ", ";
+}
+.ProjectInfo ul li:last-of-type::after {
+  content: "";
+}
+
+.ProjectDetails footer {
+  /* grid-area: 2 / 1 / 3 / 2; */
+  align-self: center;
+  justify-self: center;
+}
+
+@media screen and (max-width: 860px) {
+  .ProjectDetails {
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15rem minmax(10rem, auto) minmax(200px, auto);
+    align-content: start;
+    min-height: 150vh;
+    column-gap: 2rem;
+  }
+  .ProjectDetails header {
+    grid-area: 1 / 1 / 1 / 1;
+    justify-content: center;
+    align-self: center;
+    justify-self: start;
+  }
+  .ProjectDetails header h2 {
+    font-size: 2.2rem;
+  }
+  .ProjectImage {
+    grid-area: 3 / 1 / 3 / 3;
+  }
+
+  .ProjectInfo {
+    grid-area: 2 / 1 / 2 / 3;
+    justify-self: start;
+    align-self: start;
+  }
+
+  .ProjectDetails footer {
+    grid-area: 1 / 2 / 1 / 2;
+    align-self: center;
+    justify-self: center;
+  }
+}
