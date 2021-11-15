@@ -35,10 +35,15 @@
 @media screen and (max-width: 700px) {
   .Intro {
     height: 100%;
+    width: 100%;
     flex-direction: column;
   }
   .Intro-info {
+    flex-basis: 90%;
+  }
+  .Intro-info p {
     flex-basis: 80%;
+    font-size: 1.3rem;
   }
   .Intro-photo img {
     max-width: 100%;

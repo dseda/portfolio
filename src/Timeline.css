@@ -1,0 +1,60 @@
+.Timeline {
+  background: linear-gradient(100deg, slateblue, rgb(86, 65, 220));
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: rgb(53, 53, 53);
+  padding-bottom: 2rem;
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.Timeline h1.title {
+  padding: 3rem 0;
+  color: white;
+  font-size: 2rem;
+}
+.title {
+  font-size: 3em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h3 {
+  padding-top: 0.25em;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.date {
+  color: rgb(201, 251, 255);
+}
+
+#description {
+  margin: 1.5em 0 0.5em 0;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: white;
+    margin-top: 0.3em;
+  }
+}
+
+@media only screen and (max-width: 1169px) {
+  .vertical-timeline-element-date {
+    color: initial;
+  }
+}

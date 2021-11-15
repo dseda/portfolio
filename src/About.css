@@ -1,5 +1,5 @@
 .About {
-  height: 85vh;
+  min-height: 200vh;
   margin: 0 auto;
 }
 .About h4 {

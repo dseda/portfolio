@@ -33,6 +33,7 @@
 import {
   // rest of the elements/components imported remain same
   useParams,
+  Link,
 } from "react-router-dom";
 import ProjectsData from "./ProjectsData";
 import "./ProjectDetails.css";
@@ -42,6 +43,9 @@ function ProjectDetails() {
   let project = ProjectsData.find((p) => p.id === parseInt(id));
   return (
     <section className="ProjectDetails">
+      <p>
+        <Link to="/projects">All projects</Link>
+      </p>
       <header>
         <h2>{project.title}</h2>
       </header>

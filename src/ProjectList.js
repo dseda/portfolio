@@ -16,10 +16,23 @@ class ProjectList extends Component {
     const projects = this.props.projects.map((p) => (
       <section key={p.id} className="Project">
         <div className="Project-image">
-          <img src={p.imgSrc} />
+          <Link
+            key={p.id}
+            to={`/projects/${p.id}`}
+            style={{ textDecoration: "none" }}
+          >
+            <img src={p.imgSrc} />
+          </Link>
         </div>
         <div className="Project-info">
-          <h3>{p.title}</h3>
+          <Link
+            key={p.id}
+            to={`/projects/${p.id}`}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <h3>{p.title}</h3>
+          </Link>
+
           <div className="Tech-stack">
             <p>Tech Stack: </p>
             <ul>

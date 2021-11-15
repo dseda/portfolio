@@ -1,44 +1,46 @@
 .ProjectDetails {
   text-align: left;
-  width: 70%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 4fr;
-  column-gap: 2rem;
-  justify-items: start;
+  width: 80%;
   min-height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 30vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 6rem minmax(10rem, 20rem) 10rem;
+  column-gap: 3rem;
+  row-gap: 3rem;
+  justify-items: start;
+  justify-content: center;
+  align-content: start;
 }
 .ProjectDetails header {
-  grid-area: 1 / 1 / 2 / 3;
-  justify-content: center;
-  align-self: center;
-  justify-self: center;
+  grid-area: 1 / 2 / 1 / 2;
+  align-self: start;
+  justify-self: start;
 }
 .ProjectDetails header h2 {
   font-size: 2.7rem;
 }
 .ProjectImage {
   grid-area: 2 / 1 / 3 / 2;
-  max-width: 400px;
   justify-content: start;
   align-self: start;
-  border: 3px solid slateblue;
-  box-shadow: 5px 5px slateblue;
-  /* border-radius: 10px; */
-  /* justify-self: stretch; */
+  /* border: 3px solid slateblue; */
+  /* box-shadow: 5px 5px slateblue; */
 }
 
 .ProjectImage img {
-  border-radius: 10px;
+  max-width: 100%;
+  border: 3px solid slateblue;
+  box-shadow: 5px 5px slateblue;
 }
 .ProjectInfo {
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: 2 / 2 / 4 / 3;
   justify-self: start;
 }
 
 .ProjectInfo h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-block-start: 0;
   margin-block-end: 0;
 }
@@ -68,19 +70,20 @@
 }
 
 .ProjectDetails footer {
-  /* grid-area: 2 / 1 / 3 / 2; */
+  grid-area: 1 / 1 / 1 / 3;
   align-self: center;
-  justify-self: center;
+  justify-self: end;
 }
 
 @media screen and (max-width: 860px) {
   .ProjectDetails {
     width: 90%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15rem minmax(10rem, auto) minmax(200px, auto);
+    grid-template-rows: 10rem minmax(10rem, max-content) 10rem;
     align-content: start;
-    min-height: 150vh;
+    /* min-height: 150vh; */
     column-gap: 2rem;
+    row-gap: 1rem;
   }
   .ProjectDetails header {
     grid-area: 1 / 1 / 1 / 1;
@@ -93,6 +96,7 @@
   }
   .ProjectImage {
     grid-area: 3 / 1 / 3 / 3;
+    width: 60%;
   }
 
   .ProjectInfo {

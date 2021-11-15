@@ -22,7 +22,8 @@ export default [
     id: 3,
     imgSrc: coinflipper,
     title: "Coin Flipper",
-    details: "Project info",
+    details:
+      "Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info Project info ",
     techsUsed: ["js", "react", "css", "html"],
     src: "https://dseda.github.io/coin-flipper/",
   },
