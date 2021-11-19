@@ -13,14 +13,14 @@ class Interests extends Component {
   }
   render() {
     const runningIcon = <i className="fas fa-running"></i>;
-    const cookingIcon = <i className="fas fa-pizza-slice"></i>;
+    const videoIcon = <i class="fas fa-video"></i>;
     const travellingIcon = <i className="fas fa-suitcase-rolling"></i>;
     const liveShows = <i class="fas fa-theater-masks"></i>;
     const interests = [
-      { name: "Running", icon: runningIcon },
-      { name: "Cooking", icon: cookingIcon },
-      { name: "Travelling", icon: travellingIcon },
-      { name: "Live Shows", icon: liveShows },
+      { name: "running", icon: runningIcon },
+      { name: "drone filming", icon: videoIcon },
+      { name: "travelling", icon: travellingIcon },
+      { name: "live shows", icon: liveShows },
     ].map((i, index) => (
       <ReactCardFlip
         isFlipped={this.state.isFlipped}
@@ -36,7 +36,7 @@ class Interests extends Component {
     ));
 
     return (
-      <section className="Interests">
+      <section className="Interests" onTouchStart={this.flip}>
         <h4>My Interests</h4>
         <div className="InterestsContainer">
           <ul onMouseEnter={this.flip} onMouseLeave={this.flip}>

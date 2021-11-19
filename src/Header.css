@@ -8,11 +8,14 @@
 }
 .Logo-link {
   justify-self: center;
+  text-decoration: none;
 }
 .Logo {
   margin-top: 1.2rem;
   flex-basis: 40%;
   font-size: 2.6rem;
+  color: whitesmoke;
+  text-decoration: none;
 }
 .Logo div {
   display: inline;

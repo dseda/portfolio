@@ -1,0 +1,32 @@
+section.Skills {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+ul.SkillsContainer {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: flex-start;
+  justify-items: flex-start;
+  flex-wrap: wrap;
+}
+
+ul.SkillsContainer li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  background-color: #0c2233;
+  color: rgb(174, 174, 174);
+  padding: 1.5rem 1rem;
+  width: 22%;
+  border: 1px solid grey;
+
+  text-transform: capitalize;
+  margin: 2rem 1rem;
+}
+@media screen and (max-width: 900px) {
+  ul.SkillsContainer li {
+    width: 30%;
+  }
+}

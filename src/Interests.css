@@ -1,12 +1,11 @@
 .InterestsContainer {
   width: 70%;
-  margin: 0 auto 7rem;
+  margin: 0 auto;
 }
 .InterestsContainer h4 {
   margin: 0 auto;
 }
 .InterestsContainer ul {
-  width: 90%;
   margin: 0 auto;
   list-style: none;
   display: flex;
@@ -21,7 +20,7 @@
   width: 80px;
   height: 80px;
   text-align: center;
-  /* text-transform: uppercase; */
+  text-transform: capitalize;
   background-color: #ffee00;
   color: slateblue;
   font-size: 4rem;
@@ -39,9 +38,22 @@
 }
 
 @media screen and (max-width: 900px) {
+  .InterestsContainer {
+    width: 100%;
+    margin: 0 auto;
+  }
   .InterestsContainer ul {
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 700px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2rem auto;
+  }
+  .InterestsContainer ul li {
+    padding: 1.5rem;
+    width: 40px;
+    height: 40px;
+    font-size: 3rem;
+  }
+  .InterestsContainer ul li.text {
+    font-size: 1em;
   }
 }

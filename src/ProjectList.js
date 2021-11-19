@@ -71,20 +71,20 @@ class ProjectList extends Component {
               })}
             </ul>
           </div>
-          {/* <p>{p.details}</p> */}
+          <p>{p.details}</p>
           <footer>
-            <a href={p.src} className="Project-demo-link" target="_blank">
-              <p>Live demo</p>
-            </a>
             <div className="Project-details">
               <Link
                 key={p.id}
                 to={`/projects/${p.id}`}
                 style={{ textDecoration: "none" }}
               >
-                <p>View project details</p>
+                <p>View more...</p>
               </Link>
             </div>
+            <a href={p.src} className="Project-demo-link" target="_blank">
+              <p>Live demo</p>
+            </a>
             <Outlet />
           </footer>
         </div>

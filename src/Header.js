@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 import "./Header.css";
 class Header extends Component {
   constructor(props) {
@@ -29,13 +30,13 @@ class Header extends Component {
         onMouseEnter={this.toggleRotate}
         onMouseLeave={this.toggleRotate}
       >
-        <a className="Logo-link">
+        <Link to="/" className="Logo-link">
           <div className="Logo">
             <i className={`fab fa-stripe-s ${rotating ? "rotating" : ""}`}></i>
 
             <span>eda.dev</span>
           </div>
-        </a>
+        </Link>
 
         <Navbar menuOpen={this.state.menuOpen} toggleMenu={this.toggleMenu} />
       </header>

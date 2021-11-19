@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TimeLine from "./Timeline";
 import Interests from "./Interests";
+import Skills from "./Skills";
 import "./About.css";
 class About extends Component {
   render() {
@@ -11,6 +12,7 @@ class About extends Component {
         <div className="Timeline">
           <TimeLine />
         </div>
+        <Skills />
       </section>
     );
   }

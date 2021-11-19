@@ -35,6 +35,13 @@ img.tech {
   font-weight: 600;
   align-self: end;
 }
+.Project-info > p {
+  width: 200px;
+  margin: 0.1rem auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .Project .Tech-stack {
   display: flex;
   flex-direction: column;
@@ -64,7 +71,7 @@ img.tech {
 }
 .Project-demo-link p {
   width: fit-content;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: 1rem;
   border-radius: 30px;
   color: white;

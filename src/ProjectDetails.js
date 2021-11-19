@@ -41,6 +41,10 @@ import "./ProjectDetails.css";
 function ProjectDetails() {
   let { id } = useParams();
   let project = ProjectsData.find((p) => p.id === parseInt(id));
+  let details = project.details.map((d) => {
+    return <li>{d}</li>;
+  });
+
   return (
     <section className="ProjectDetails">
       <p>
@@ -56,13 +60,15 @@ function ProjectDetails() {
         <h3>Project Details</h3>
         <p>
           Developed with
-          <ul>
+          <ul className="TechsUsed">
             {project.techsUsed.map((t) => (
               <li>{t.toUpperCase()}</li>
             ))}
           </ul>
         </p>
-        <p>{project.details}</p>
+        <p> {project.summary}</p>
+        <h4>Key points:</h4>
+        <ul className="ProjectKeyPoints"> {details}</ul>
       </div>
       <footer>
         <a href={project.src} className="Project-demo-link" target="_blank">

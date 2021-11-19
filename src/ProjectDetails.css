@@ -46,29 +46,39 @@
 }
 .ProjectInfo p {
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  line-height: 150%;
 }
-.ProjectInfo p:first-of-type {
+.ProjectInfo p:nth-of-type(1) {
   font-weight: 600;
   color: rgb(83, 70, 170);
 }
 
-.ProjectInfo ul {
+ul.TechsUsed {
   display: inline;
   margin: 0;
   padding-left: 0.3rem;
 }
-.ProjectInfo ul li {
+ul.TechsUsed li {
   list-style: none;
   display: inline;
 }
-.ProjectInfo ul li::after {
+ul.TechsUsed li::after {
   content: ", ";
 }
-.ProjectInfo ul li:last-of-type::after {
+ul.TechsUsed li:last-of-type::after {
   content: "";
 }
-
+ul.ProjectKeyPoints {
+  display: block;
+}
+ul.ProjectKeyPoints li {
+  line-height: 140%;
+  display: block;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
 .ProjectDetails footer {
   grid-area: 1 / 1 / 1 / 3;
   align-self: center;
