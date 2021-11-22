@@ -42,7 +42,12 @@ function ProjectDetails() {
   let { id } = useParams();
   let project = ProjectsData.find((p) => p.id === parseInt(id));
   let details = project.details.map((d) => {
-    return <li>{d}</li>;
+    return (
+      <li>
+        <span>{d.keyPoint}: </span>
+        {d.description}
+      </li>
+    );
   });
 
   return (

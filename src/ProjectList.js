@@ -43,7 +43,7 @@ class ProjectList extends Component {
                       <i className="fab fa-js-square"></i>
                     </li>
                   );
-                else if (t === "react")
+                else if (t === "reactjs")
                   return (
                     <li>
                       <i className="fab fa-react"></i>
@@ -71,7 +71,7 @@ class ProjectList extends Component {
               })}
             </ul>
           </div>
-          <p>{p.details}</p>
+          <p>{p.summary}</p>
           <footer>
             <div className="Project-details">
               <Link
